@@ -60,27 +60,22 @@ h1 {
 
 /* hover, translate & tranform effects */
 
-.container .squares:nth-child(-n+4) :hover {
+.container .squares:nth-child(-n+4):hover {
     background-image: url(../images/icons2.png);
-    width: 100px;
-    height: 100px;
-    border-radius: 25%;
-    cursor: pointer;
-    transition: transform .5s ease-in-out;
 }
 
-.squares:nth-child(1) :hover {
+.squares:nth-child(1):hover {
     background: #13b4ff;
 }
 
-.squares:nth-child(2) :hover {
+.squares:nth-child(2):hover {
     background: #d861af;
 }
 
-.squares:nth-child(3) :hover {
+.squares:nth-child(3):hover {
     background: #81205f;
 }
 
-.squares:nth-child(4) :hover {
+.squares:nth-child(4):hover {
     background: #77b800;
 }
