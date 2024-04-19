@@ -1,0 +1,8 @@
+.column {
+  color: red; 
+  width: 150px;
+  height: 150px;
+  flex: 50%;
+  float: left;
+  background-color: aliceblue;
+}
