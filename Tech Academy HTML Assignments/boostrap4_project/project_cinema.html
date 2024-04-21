@@ -19,116 +19,112 @@
   </head>
   <body>
     <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-info">
-          
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#about">About </a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#showtimes">Showtimes</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link text-light" href="#deals">Deals</a>
-                </li>
-              </ul>
-              <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
-              </form>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#about">About </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#showtimes">Showtimes</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#deals">Deals</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-primary my-2 my-sm-0 text-light" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
 
-          <div class="jumbotron jumbotron-fluid bg-info text-center">
-            <div class="container">
-              <h1 class="display-4 text-light">Academy Cinemas</h1>
-              <p class="lead text-light">Enjoy the show!</p>
+      <div class="jumbotron jumbotron-fluid bg-info text-center">
+        <div class="container">
+          <h1 class="display-4 text-light">Academy Cinemas</h1>
+          <p class="lead text-light">Enjoy the show!</p>
+        </div>
+      </div>
+
+      <div class="container" id="about">
+        <div class="row">
+          <div class="col-sm">
+            <img class="img fluid" src="./img/pdx.jpg" alt="" width="100%"></img>
+          </div>
+          <div class="col-sm">
+            <h3> Accommodations:</h3>
+            <p> We offer a variety of accommodations to make your movie experience as enjoyable as possible. </p>
+            <ul>
+              <li> Reclining seats </li>
+              <li> Dolby Atmos sound </li>
+              <li> 3D and IMAX </li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <h3> Now Playing:</h3>
+            <ul class="list-group" id="showtimes">
+              <li class="list-group-item">
+                <a class="nav-link" href="#">Kong Skull Island</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#">Ghost in a Shell</a>
+              </li>
+              <li class="list-group-item">
+                <a class="nav-link" href="#">Beauty and the Beast</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Showtimes -->
+
+      <div class="container my-5"></div>
+      <div class="row .h-100">
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="./img/beautyandthebeast.jpg" class="card-img-top img-fluid" alt="Beauty and the Beast">
+            <div class="card-body flex-column">
+              <h3 class="card-title">Beauty and the Beast</h3>
+              <p class="card-text mb-auto">A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by true love.</p>
+              <span class="badge badge-info badge-pill">10:00</span>
+              <span class="badge badge-info badge-pill">12:00</span>
+              <span class="badge badge-info badge-pill">14:00</span>
+              <span class="badge badge-info badge-pill">16:00</span>
+              <span class="badge badge-info badge-pill">18:00</span>
             </div>
           </div>
-
-          <div class="container" id="about">
-            <div class="row">
-              <div class="col-sm">
-                
-                <img class ="img fluid" src="./img/pdx.jpg" alt="" width="100%" ></img>
-
-              </div>
-              <div class="col-sm">
-                <h3> Accomadations:</h3>
-                <p> We offer a variety of accomadations to make your movie experience as enjoyable as possible. </p>
-                <ul>
-                  <li> Reclining seats </li>
-                  <li> Dolby Atmos sound </li>
-                  <li> 3D and IMAX </li>
-
-              </div>
-              <div class="col-sm">
-                
-                <h3> Now Playing:</h3>
-                <ul class="list-group" id="showtimes">
-                  <li class="list-group-item">
-                    <a class="nav-link" href="#">Kong Skull Island</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a class="nav-link" href="#">Ghost in a Shell</a>
-                  </li>
-                  <li class="list-group-item">
-                    <a class="nav-link" href="#">Beauty and the Beast</a>
-                  </li>
-                </ul>
-              </div>
+        </div>
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="./img/ghostintheshell.jpg" class="card-img-top img-fluid" alt="Ghost in a shell">
+            <div class="card-body flex-column">
+              <h3 class="card-title">Ghost in the shell</h3>
+              <p class="card-text mb-auto">A female cybernetic government agent, Major Motoko Kusanagi, and the Internal Bureau.</p>
+              <span class="badge badge-info badge-pill">10:00</span>
+              <span class="badge badge-info badge-pill">12:00</span>
+              <span class="badge badge-info badge-pill">14:00</span>
+              <span class="badge badge-info badge-pill">16:00</span>
+              <span class="badge badge-info badge-pill">18:00</span>
             </div>
           </div>
-
-          <!-- Showtimes -->
-
-            <div class="container my-5"></div>
-            <div class="row .h-100">
-              <div class="col-sm">
-              <div class="card h-100">
-                <img src="./img/beautyandthebeast.jpg" class="card-img-top img-fluid" alt="Beauty and the Beast">
-                <div class="card-body flex-column">
-                <h3 class="card-title">Beauty and the Beast</h3>
-                <p class="card-text mb-auto">A young Prince, imprisoned in the form of a Beast (Dan Stevens), can be freed only by true love.</p>
-                <span class="badge badge-info badge-pill">10:00</span>
-                <span class="badge badge-info badge-pill">12:00</span>
-                <span class="badge badge-info badge-pill">14:00</span>
-                <span class="badge badge-info badge-pill">16:00</span>
-                <span class="badge badge-info badge-pill">18:00</span>
-                </div>
-              </div>
-              </div>
-              <div class="col-sm">
-              <div class="card h-100">
-                <img src="./img/ghostintheshell.jpg" class="card-img-top img-fluid" alt="Ghost in a shell">
-                <div class="card-body flex-column">
-                <h3 class="card-title">Ghost in the shell</h3>
-                <p class="card-text mb-auto">A female cybernetic government agent, Major Motoko Kusanagi, and the Internal Bureau.</p>
-                <span class="badge badge-info badge-pill">10:00</span>
-                <span class="badge badge-info badge-pill">12:00</span>
-                <span class="badge badge-info badge-pill">14:00</span>
-                <span class="badge badge-info badge-pill">16:00</span>
-                <span class="badge badge-info badge-pill">18:00</span>
-                </div>
-              </div>
-              </div>
-              <div class="col-sm">
-              <div class="card h-100">
-                <img src="./img/kongskullisland.jpg" class="card-img-top img-fluid" alt="Kong Island">
-                <div class="card-body flex-column">
-                <h3 class="card-title">Kong Island</h3>
-                <p class="card-text mb-auto">Set in 1973, the film follows a team of scientists and Vietnam War soldiers travelling to the uncharted Skull Island and meeting Kong, a gigantic ape.</p>
-                <span class="badge badge-info badge-pill">10:00</span>
-                <span class="badge badge-info badge-pill">12:00</span>
-                <span class="badge badge-info badge-pill">14:00</span>
-                <span class="badge badge-info badge-pill">16:00</span>
-                <span class="badge badge-info badge-pill">18:00</span>
-                </div>
-              </div>
-              </div>
+        </div>
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="./img/kongskullisland.jpg" class="card-img-top img-fluid" alt="Kong Island">
+            <div class="card-body flex-column">
+              <h3 class="card-title">Kong Island</h3>
+              <p class="card-text mb-auto">Set in 1973, the film follows a team of scientists and Vietnam War soldiers traveling to the uncharted Skull Island and meeting Kong, a gigantic ape.</p>
+              <span class="badge badge-info badge-pill">10:00</span>
+              <span class="badge badge-info badge-pill">12:00</span>
+              <span class="badge badge-info badge-pill">14:00</span>
+              <span class="badge badge-info badge-pill">16:00</span>
+              <span class="badge badge-info badge-pill">18:00</span>
             </div>
-            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
           <!-- /showtimes-->
@@ -162,7 +158,7 @@
 
 
 
-    </div>
+ 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
