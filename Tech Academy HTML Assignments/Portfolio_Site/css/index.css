@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(
+        180deg,
+        rgba(45, 41, 37, 1) 0%,
+        rgba(45, 41, 37, 1.1) 5%,
+        rgba(45, 41, 37, 1.2) 7.5%,
+        #1b1917 50%
+      );
+    margin:0%;  /* This ensures our site displays all the way to the edge of the browser screen */;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../assets/demos/welcome_card.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+
+  #Home_Video {
+    position: absolute; 
+    top:0;
+    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
+
+    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
+    z-index: -1; /* This places the video behind the other elements on the page */
+    overflow: hidden; /* This ensures the video does not overflow the page */
+}
+
+.Video_Text {
+    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+    color: white; /* Makes the font color white */
+    width: 100%; /* Ensures the video-text container fills the width of the video */
+    padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
+    
+}
+
+.Cropped_Video {
+    height: 450px;    
+}
+
+@media screen and (max-width: 576px) {
+    #Home_Video {
+        display: none;
+    }
+}
+
+
+.Column_1 {
+    float: left;
+    width: 50%; /* This ensures the column takes up half of the page width */
+    padding: 10px;
+    padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
+    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
+    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+}
+
+/* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
+.Column_2 {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    padding-top: 1.9%;
+    height: 400px;
+    background-color: #4d4d4d;
+}
+
+/* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
+.Column_tall {
+    padding-top: 3.5%;
+    height: 450px;
+}
