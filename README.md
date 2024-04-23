@@ -1,7 +1,16 @@
 # HTML-and-CSS-Projects
 My projects for Tech Academy
 
-#**Projects:**
-https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P1_HTML-v1.4.2
-https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P2_HTML_v1.0
-https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/Portfolio_HTML_V1
+# **Projects:**
+- [Tourism Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P1_HTML-v1.4.2)
+- [Cinema Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P2_HTML_v1.0)
+- [Portfolio Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/Portfolio_HTML_V1)
+
+### **Tourism Website**
+Provides an example homepage for a video game tourism website. It's styled using CSS and contains a navbar, image containers, and form.
+
+### **Cinema Website**
+An example website in the style of a movie theature site. Uses Bootstrap 4 and contains, a jumbotron, navbar, cards, and more.
+
+### **Portfolio Website**
+A website to store my examples from github in a more neat fashion. Uses Bootstrap 4 and Mdl to provide a seemless look.
