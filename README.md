@@ -4,7 +4,7 @@ My projects for Tech Academy
 # **Projects:**
 - [Tourism Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P1_HTML-v1.4.2)
 - [Cinema Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/P2_HTML_v1.0)
-- [Portfolio Website](https://github.com/Fyrexian/HTML-and-CSS-Projects/releases/tag/Portfolio_HTML_V1)
+- [Portfolio Website](https://fyrexian.github.io/)
 
 ### **Tourism Website**
 Provides an example homepage for a video game tourism website. It's styled using CSS and contains a navbar, image containers, and form.
