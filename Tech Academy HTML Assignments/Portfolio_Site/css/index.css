@@ -44,6 +44,13 @@ body {
     }
 }
 
+/**
+ * Styles for the page contents.
+ *
+ * The .Page_Contents class is used to style the main content section of the page.
+ * It sets a linear gradient background for a seemless transition from the video to the texts, adjusts the margin and padding, and applies
+ * flexbox properties for a column layout with a gap between elements.
+ */
 .Page_Contents {
     background: linear-gradient(180deg, rgba(46, 46, 46, 0.7) 0%, rgba(46, 46, 46, 0.8) 3%, #1f1f1f 20%);
     margin-top: 0; /* Remove or reduce this if it exists */
