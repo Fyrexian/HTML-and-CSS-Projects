@@ -1,50 +1,42 @@
 body {
-    background: linear-gradient(
-        180deg,
-        rgba(45, 41, 37, 1) 0%,
-        rgba(45, 41, 37, 1.1) 5%,
-        rgba(45, 41, 37, 1.2) 7.5%,
-        #1b1917 50%
-      );
+    background:#1b1917 50%;
     margin:0%;  /* This ensures our site displays all the way to the edge of the browser screen */;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: Roboto, 'Trebuchet MS', sans-serif;
 }
 
+  .Home_Panel {
+    background: rgba(46, 46, 46, 0.7);
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0; /* Remove or reduce this if it exists */
+    padding-bottom: 0; /* Remove or reduce this if it exists */
+    height: 100vh;  /* This sets the height of the panel to 100% of the viewport height */
 
-
-.demo-card-wide.mdl-card {
-    width: 512px;
-  }
-  .demo-card-wide > .mdl-card__title {
-    color: #fff;
-    height: 176px;
-    background: url('../assets/demos/welcome_card.jpg') center / cover;
-  }
-  .demo-card-wide > .mdl-card__menu {
-    color: #fff;
-  }
+}
 
   #Home_Video {
-    position: absolute; 
-    top:0;
-    right: 0; /* This ensures there is no space between the edge of the video and the edge of the page */
-
-    min-width: 100%; /* This ensures the video is displayed across the full width of the page */
-    z-index: -1; /* This places the video behind the other elements on the page */
-    overflow: hidden; /* This ensures the video does not overflow the page */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -5;
 }
 
-.Video_Text {
-    background: rgba(0, 0, 0, 0.5); /* This provides a semi-transparent background for the text to sit over */
+.Important_Text {
     color: white; /* Makes the font color white */
-    width: 100%; /* Ensures the video-text container fills the width of the video */
-    padding: 20px; /* This adds padding around the video-text container so that the background goes slightly beyond the text */
-    
+    font-family: Roboto, sans-serif; /* Changes the font to Roboto */
+    text-align: center;
+    margin-top: 5%; /* Adds space between the top of the text and the top of the page */
 }
 
-.Cropped_Video {
-    height: 450px;    
+.highlight {
+    color: #ff0000; /* Replace with your desired color */
 }
+
+
 
 @media screen and (max-width: 576px) {
     #Home_Video {
@@ -52,14 +44,67 @@ body {
     }
 }
 
+.Page_Contents {
+    background: linear-gradient(180deg, rgba(46, 46, 46, 0.7) 0%, rgba(46, 46, 46, 0.8) 3%, #1f1f1f 20%);
+    margin-top: 0; /* Remove or reduce this if it exists */
+    padding-top: 0;
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+}
+
+.Page_Contents h1 {
+    margin-top: 0;
+}
+
+.box_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(71, 71, 71, 0.32);
+    color: rgb(236, 236, 236);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    padding:48px;
+    margin: 5%;
+}
+
+.c_right_picture {
+        float: right;
+        max-width: 100%;
+        height: auto;
+}
+
+.c_left_picture {
+    float: left;
+    max-width: 50%;
+    height: auto;
+}
+
+.demo-card-wide.mdl-card {
+    width: 512px;
+    background-color: rgb(53, 53, 53);
+  }
+
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../assets/demos/welcome_card.jpg') center / cover;
+  }
+  
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
+
 
 .Column_1 {
     float: left;
     width: 50%; /* This ensures the column takes up half of the page width */
     padding: 10px;
     padding-top: 3%; /* This ensures there is space between the top of the column and our headings */
-    height: 400px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #f2f2f2; /* Sets the background color of the columns with class Column_1 */
+   
+
 }
 
 /* Screens 576px and smaller will display a scroll bar if the text overflows the column height */
@@ -74,8 +119,6 @@ body {
     width: 50%;
     padding: 10px;
     padding-top: 1.9%;
-    height: 400px;
-    background-color: #4d4d4d;
 }
 
 /* This class is applied to the columns in the final row, overriding the height and padding to provide more room for the contact form  while keeping the rest of the formatting from Column_1 or Column_2 */
@@ -83,3 +126,96 @@ body {
     padding-top: 3.5%;
     height: 450px;
 }
+
+.Row:after {
+	content: ""; /* By leaving this blank, we are allowing the footer (covered lower down) to be displayed - removing it makes the footer overwrite a column */
+	display: table; /* The display property specifies the type of display behavior; the table value tells the browser to treat the element as a table */
+	clear: both; /* This clears any other elements from floating on the left or the right of an element */
+}
+
+.github-container {
+    box-sizing: border-box;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-rows: 1fr;
+    gap: 3rem;
+    place-content: center;
+    place-items: center;
+    margin-top: 1rem;
+    padding: 2rem;
+    width: 100%;
+}   
+
+.mdl-card__supporting-text {
+    p{
+        font-family: Roboto, sans-serif;
+        font-size: 1.5rem;
+        color: #fff;
+    }
+
+}
+
+
+/***** CONTACT FORM STYLING *****/
+/* input[type=text] targets all text input sections of the contact form */
+input[type=text] {
+    width: 100%; /* Each input box covers the full width of the container */
+    padding: 12px; /* Adds padding within the text box */
+    border: 1px solid #ccc; /* Setting a solid border and its color */
+    border-radius: 4px; /* Slightly rounds the corners of the text box border */
+    box-sizing: border-box; /* This creates a box with a border around the contact form input boxes */
+    margin-top: 6px; /* Adds a margin to the top of the text box */
+    margin-bottom: 16px; /* Adds a margin to the bottom of the text box */
+    resize: vertical; /* This allows the user to resize the text boxes vertically */
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effects for input boxes */
+input[type=text]:hover {
+    box-shadow: 0 0 5px #00004d inset; /* This creates a blue shadow in the text box when hovered over by the user */
+}
+
+/* Submit button */
+input[type=submit] {
+    background-color: black; /* Sets the background color of the submit button to black */
+    color: white; /* Sets the font color of the Submit button to white */
+    font-weight: bold; /* Makes the font of the submit button bold */
+    padding: 12px 20px; /* Adds padding to the submit button */
+    border: none; /* Removes the border from the submit button */
+    border-radius: 4px; /* Gives the submit button the same rounded corners as the text boxes */
+    cursor: pointer; /* Changes the cursor to pointer when over the submit button */
+    display: block; /* Allows the submit button to be centered */
+    margin-left: auto; /* In combination with "margin-right: auto" this will center the submit button */
+    margin-right: auto;
+    font-family: Perpetua, Rockwell Extra Bold;
+}
+
+/* Hover effect for submit button */
+input[type=submit]:hover {
+    background-color: white; /* Turns the background of the submit button white when the user hovers over it */
+    color: black; /* Turns the font black when hovered over */
+    transform: scale(1.5); /* Makes the button increase 1.5 times in size */
+    transition: transform 1.5s; /* Makes the transform effect last 1.5 seconds */
+}
+
+/* Form element */
+form {
+    border-radius: 5px; /* Rounds the corners of the contact form */
+    background-color: #f2f2f2; 
+    padding: 10px; /* Adds padding to the contact form */
+    font-family: "Trebuchet MS", Optima;
+}
+/***** END OF CONTACT FORM STYLING *****/
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    background-color: #1b1917;
+    color:white;
+    text-align: center;
+  }
