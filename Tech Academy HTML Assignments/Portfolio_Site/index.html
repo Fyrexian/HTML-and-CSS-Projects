@@ -17,18 +17,23 @@
 <body>
     <header>
         <!-- Nav bar-->
-        <nav class="navbar navbar-expand navbar-light bg-transparent fixed-top shadow-mg">
+        <nav class="navbar navbar-expand-md navbar-light fixed-top shadow-mg">
             <a class="navbar-brand text-light" href="#">Conner Vaeth - Portfolio site</a>
-            <div class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link text-light" href="#About">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#Github">Github</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-light" href="#Contact">Contact</a>
-                </li>
+            <button class="navbar-toggler bg-transparent" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-light" href="#About">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Github">Github</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#Contact">Contact</a>
+                    </li>
+                </ul>
             </div>
         </nav>
         <!-- End of Nav bar-->         
@@ -43,7 +48,7 @@
                 </video>
             </div>
             <div class="Important_Text">
-                <h1>Hey there! <br> I'm <span class="highlight">Conner Vaeth</span> <br> Welcome to my Portfolio!</h1>
+                <h1 id="scaling-text">Hey there! <br> I'm <span class="highlight">Conner Vaeth</span> <br> Welcome to my Portfolio!</h1>
             </div>
         </div>
         <!-- End of Home Video-->
@@ -52,11 +57,11 @@
             <h1 class="Important_Text" id="About"> About Me </h1>
             <!--About section-->
             <div class="box_container">
-                <div class="Column_1">
-                    <h3> I am a game designer</h3>
+                <div class="Column_1" >
+                    <h3 id="scaling-text"> I am a game designer</h3>
                     <p> I am a graduate of The Tech Academy’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: 
                         HTML, CSS, JavaScript, SQL, C# and more.</p>
-                    <h5> <br><br>You can contact me <a href="#Contact"> here!</a></h5>
+                    <h5><br><br>You can contact me <a href="javascript:openForm()" onclick="openForm()" class="about_contact_link">here!</a></h5>
                 </div>
                 <div class="Column_2">
                     <img src="img/profile_picture.png" alt="Profile Picture" class="c_right_picture">
@@ -89,18 +94,8 @@
                             <p>Go to project!</p>
                         </a>
                     </div>
-                </div>
-                <div class="demo-card-wide mdl-card mdl-shadow--2dp text-white">
-                    <div class="mdl-card__title">
-                        <h2 class="mdl-card__title-text">Project</h2>
-                    </div>
-                    <div class="mdl-card__supporting-text">
-                        <p> This project ... does this... and this</p>
-                    </div>
-                    <div class="mdl-card__actions mdl-card--border">
-                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                            <p>Go to project!</p>
-                        </a>
+                    <div class="mdl-card__menu" >
+                          <i class="material-icons" id="my-icons-large">javascript</i>
                     </div>
                 </div>
                 <div class="demo-card-wide mdl-card mdl-shadow--2dp text-white">
@@ -115,29 +110,49 @@
                             <p>Go to project!</p>
                         </a>
                     </div>
+                    <div class="mdl-card__menu" >
+                        <i class="material-icons" id="my-icons-medium">HTML</i>
+                    </div>
                 </div>
-            </div>
-            <!-- Contact section-->
-            <h1 class="Important_Text" id="Contact"> Contact Me </h1>
-            <div class="box_container">
-                <div class="Column_2">
-                    <h3>Interested?</h3>
-                    <h4> Type in your info and I'll get back to you asap!</h4>
-                    <div class="Row">
-                        <!--Contact form, right column-->
-                        <!--This specifies where and how to send the form data; we are leaving it blank-->
-                        <form action="" method="POST"> <!-- Here we are utilizing a 3rd party service to submit the contact form data, insert your formspree endpoint in the action attribute -->
-                            <label>Name:</label>
-                            <input type="text" placeholder="Please enter your name here">
-                            <label>Email:</label>
-                            <input type="text" id="Email" name="Email" placeholder="Please enter your email here">
-                            <label>Message:</label>
-                            <input type="text" id="Message" name="Message" placeholder="Please write your message here">
-                            <input type="submit" value="SUBMIT">
-                        </form>
+                <div class="demo-card-wide mdl-card mdl-shadow--2dp text-white">
+                    <div class="mdl-card__title">
+                        <h2 class="mdl-card__title-text">Project</h2>
+                    </div>
+                    <div class="mdl-card__supporting-text">
+                        <p> This project ... does this... and this</p>
+                    </div>
+                    <div class="mdl-card__actions mdl-card--border">
+                        <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                            <p>Go to project!</p>
+                        </a>
+                    </div>
+                    <div class="mdl-card__menu" >
+                        <i class="material-icons" id="my-icons-medium">sports_esports</i>
                     </div>
                 </div>
             </div>
+
+               <!-- Contact form -->
+        <div id="Contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                 <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+                     <h1 id="scaling-text">Contact</h1>
+                     <label for="name"><b>Name</b></label>
+                       <input type="text" placeholder="Type your name here" name="name" required>
+                     <label for="phone"><b>Phone</b></label>
+                       <input type="text" placeholder="Type your phone number here" name="phone">
+                     <label for="email"><b>Email</b></label>		
+                       <input type="text" placeholder="Type your email address here" name="email" required>
+                     <label for="message"><b>Message</b></label>
+                       <input type="text" placeholder="Type your message here" name="message">
+          
+                     <button type="submit" class="btn">SUBMIT</button>
+                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
+                 </form>
+            </div>
+         </div>
+         
         </div>
     </main>
 
@@ -148,5 +163,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
